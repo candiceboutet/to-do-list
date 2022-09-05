@@ -1,0 +1,70 @@
+body {
+    background-image: url("./space.jpg");
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#box {
+    width: 50%;
+    height: 300px;
+    color: white;
+    background: black;
+
+  
+    box-shadow: 8px 10px 31px -11px rgba(0,0,0,0.82);
+-webkit-box-shadow: 8px 10px 31px -11px rgba(0,0,0,0.82);
+-moz-box-shadow: 8px 10px 31px -11px rgba(0,0,0,0.82);
+border-radius: 25px;
+}
+
+.container {
+    display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+h1 {
+    font-size: 30px;
+    
+text-transform: uppercase;
+margin-bottom: 50px;
+letter-spacing: 1.5px;
+
+}
+
+input {
+    font-size: 25px;
+    font-style: italic;
+
+    border-radius: 20px;
+    box-shadow: 8px 10px 31px -11px rgba(255,255,255,0.82);
+-webkit-box-shadow: 8px 10px 31px -11px rgba(255,255,255,0.82);
+-moz-box-shadow: 8px 10px 31px -11px rgba(255,255,255,0.82);
+}
+ul {
+
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 25px;
+    font-style: italic;
+    margin: 40px;
+    
+
+}
+li::before {
+    content : "☐ ";
+}
+li.checked::before {
+    content: "✓ " ;
+    color: green;
+
+}
+
